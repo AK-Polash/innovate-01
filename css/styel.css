@@ -18,6 +18,9 @@ ul, ol{
     --primary__little__light: #FFDDD7;
     --primary__extra__light: #FBF3F0CC;
     --secondary: #FDF9F8;
+    --atom: #FFABBA;
+    --electron: #C087EE;
+    --crossThree: #FFDCD8;
     --pure: #FFFFFF;
     --dark: #29313D;
     --light__dark: #C4C4C4;
@@ -204,5 +207,141 @@ nav .navbar{
 .banner__verticalListItemInner{
     display: flex;
     column-gap: 20px;
+}
+.banner__cornerImage{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.banner__leftTopImg{
+    width: 100%;
+}
+.banner__atom{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 1px solid var(--atom);
+    position: absolute;
+    top: 135px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: atom_one_roat 3s linear 0ms infinite;
+}
+@keyframes atom_one_roat{
+    from{
+        transform: translateX(-50%) rotate(0deg);
+    }to{
+        transform: translateX(-50%) rotate(360deg);
+    }
+}
+.banner__atom::after{
+    background: var(--atom);
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 15px;
+}
+.banner__electron{
+    background: var(--electron);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+}
+.banner__electronOne{
+    top: 260px;
+    left: 62%;
+    animation: electron_jump 3s ease-in 0ms infinite alternate;
+}
+@keyframes electron_jump{
+    from{
+        top: 130px;
+        filter: blur(7px);
+    }to{
+        top: 260px;
+        filter: blur(0px);
+    }
+}
+.banner__electronTwo{
+    bottom: 250px;
+    left: 16%;
+    animation: electron_jump_two 4s ease-in 0ms infinite alternate;
+}
+@keyframes electron_jump_two{
+    from{
+        bottom: 80px;
+        filter: blur(7px);
+    }to{
+        bottom: 250px;
+        filter: blur(0px);
+    }
+}
+.banner__cross{
+    font-size: 24px;
+    position: absolute;
+}
+.banner__crossOne{
+    color: var(--atom);
+    top: 130px;
+    left: 15%;
+    animation: cross__one 5s linear 0ms infinite;
+}
+@keyframes cross__one{
+    from{
+        transform: rotate(0deg);
+        filter: blur(0);
+    }to{
+        transform: rotate(360deg);
+        filter: blur(2px);
+    }
+}
+.banner__crossTwo {
+	color: var(--electron);
+	bottom: 205px;
+	right: 41%;
+    animation: cross__two 4.5s linear 0ms infinite reverse;
+}
+@keyframes cross__two{
+    from{
+        transform: rotate(0deg) scale(0.5);
+    }to{
+        transform: rotate(360deg) scale(1);
+    }
+}
+.banner__crossThree{
+    color: var(--crossThree);
+    top: 400px;
+    right: 25%;
+    animation: cross__three 4s linear 0ms infinite;
+}
+@keyframes cross__three{
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+.banner__crossFour {
+	color: var(--crossThree);
+	bottom: 376px;
+	right: 34%;
+}
+.banner__crossFive{
+    color: var(--crossThree);
+    bottom: 315px;
+    left: 10%;
+    animation: cross__five 3s linear 0ms infinite reverse;
+}
+@keyframes cross__five{
+    from{
+        transform: rotate(0deg);
+        filter: blur(0px);
+    }to{
+        transform: rotate(360deg);
+        filter: blur(5px);
+    }
 }
 /* ================================= banner ends ====================================== */
