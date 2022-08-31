@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    vertical-align: middle;
+}
+a{
+    text-decoration: none;
+}
+ul, ol{
+    list-style: none;
+}
+.container{
+    margin: 0 auto;
+}
+
+/* ================================= Common CSS ends ====================================== */
+
+/* ================================= navbar start ====================================== */
+/* ================================= navbar ends ====================================== */
