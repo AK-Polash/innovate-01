@@ -39,7 +39,7 @@ nav{
     top: 0;
     left: 0;
     padding: 32px 0;
-    /* background-color: green; */
+    z-index: 999999;
 }
 nav .logo a picture svg{
     width: 111px;
@@ -107,6 +107,7 @@ nav .navbar{
 #banner{
     width: 100%;
     background: url(../images/banner.png) no-repeat center / cover scroll;
+    position: relative;
 }
 .banner__main{
     width: 771px;
@@ -158,5 +159,50 @@ nav .navbar{
 }
 .banner__button--right{
     margin-left: 24px;
+}
+.banner__verticalContents {
+	transform: rotate(-90deg);
+	display: inline-block;
+    position: absolute;
+    top: 450px;
+    left: -200px;
+}
+.banner__verticalLists{
+    display: flex;
+    column-gap: 100px;
+    color: var(--dark);
+    font-family: var(--ff__one);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    text-align: center;
+    text-transform: lowercase;
+}
+.banner__verticalListsItem--first{
+    position: relative;
+}
+.banner__verticalListsItem--first::after{
+    content: '';
+    width: 48px;
+    height: 2px;
+    background: var(--dark);
+    position: absolute;
+    top: 11px;
+    left: -53px;
+}
+.banner__verticalListsItem--first::before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--dark);
+    position: absolute;
+    top: 7px;
+    left: -22px;
+}
+.banner__verticalListItemInner{
+    display: flex;
+    column-gap: 20px;
 }
 /* ================================= banner ends ====================================== */
