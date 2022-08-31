@@ -12,11 +12,143 @@ a{
 ul, ol{
     list-style: none;
 }
+:root{
+    --primary: #FF5538;
+    --primary__light: #FFD7C8;
+    --primary__little__light: #FFDDD7;
+    --primary__extra__light: #FBF3F0CC;
+    --secondary: #FDF9F8;
+    --pure: #FFFFFF;
+    --dark: #29313D;
+    --light__dark: #C4C4C4;
+    --ff__one: 'Nunito', sans-serif;
+    --ff__two: 'Poppins', sans-serif;
+    --ff__three: 'Open Sans', sans-serif;
+}
 .container{
+    width: 1415px;
     margin: 0 auto;
 }
 
 /* ================================= Common CSS ends ====================================== */
 
 /* ================================= navbar start ====================================== */
+nav{
+    width: 100%;
+    /* background-color: green; */
+}
+nav .logo a picture svg{
+    width: 111px;
+}
+nav .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .logo{
+    width: 20%;
+}
+.navbar .menu{
+    width: 60%;
+    text-transform: capitalize;
+}
+.navbar .menu ul{
+    display: flex;
+    justify-content: center;
+    column-gap: 48px;
+}
+.navbar .menu ul li a{
+    font-family: var(--ff__three);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+    color: var(--dark);    
+}
+.navbar .menu ul li a i{
+    padding-left: 8px;
+}
+.navbar .button{
+    color: var(--pure);
+    width: 20%;
+    text-align: right;
+    font-family: var(--ff__one);
+    font-style: normal;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 200%;    
+}
+.navbar .button a{
+    background: var(--primary);
+    color: var(--pure);
+    padding: 14px 28px;
+    border: 1px solid transparent;
+    border-radius: 18px;
+    transition: all linear .2s;
+}
+.navbar .button a:hover{
+    background: transparent;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
 /* ================================= navbar ends ====================================== */
+
+/* ================================= banner start ====================================== */
+#banner{
+    width: 100%;
+    background: url(../images/banner.png) no-repeat center / cover scroll;
+}
+.banner__main{
+    width: 771px;
+    margin: 0 auto;
+    padding: 220px 0;
+}
+.banner__heading{
+    color: var(--dark);
+    font-family: var(--ff__two);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 130%;
+    text-align: center;
+    text-transform: capitalize;
+}
+.banner__description{
+    color: var(--dark);
+    font-family: var(--ff__one);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 200%;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 24px 112px 44px 112px;
+}
+.banner__buttons{
+    text-align: center;
+}
+.banner__button{
+    background: var(--primary);
+    color: var(--pure);
+    padding: 14px 28px;
+    border: 1px solid transparent;
+    border-radius: 18px;
+    font-family: var(--ff__one);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 200%;
+    text-transform: capitalize;   
+    transition: all linear .2s;
+}
+.banner__button:hover{
+    background: transparent;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+.banner__button--right{
+    margin-left: 24px;
+}
+/* ================================= banner ends ====================================== */
