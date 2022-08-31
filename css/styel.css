@@ -35,6 +35,10 @@ ul, ol{
 /* ================================= navbar start ====================================== */
 nav{
     width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 32px 0;
     /* background-color: green; */
 }
 nav .logo a picture svg{
@@ -58,13 +62,17 @@ nav .navbar{
     column-gap: 48px;
 }
 .navbar .menu ul li a{
+    color: var(--dark);
     font-family: var(--ff__three);
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 25px;
     text-transform: capitalize;
-    color: var(--dark);    
+    transition: all ease .2s;
+}
+.navbar .menu ul li a:hover{
+    color: var(--primary);
 }
 .navbar .menu ul li a i{
     padding-left: 8px;
@@ -103,7 +111,7 @@ nav .navbar{
 .banner__main{
     width: 771px;
     margin: 0 auto;
-    padding: 220px 0;
+    padding: 300px 0;
 }
 .banner__heading{
     color: var(--dark);
