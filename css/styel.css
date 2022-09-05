@@ -115,7 +115,7 @@ nav .navbar{
 .banner__main{
     width: 771px;
     margin: 0 auto;
-    padding: 300px 0;
+    padding: 300px 0 400px 0;
 }
 .banner__heading{
     color: var(--dark);
@@ -344,4 +344,53 @@ nav .navbar{
         filter: blur(5px);
     }
 }
+.banner__cardsSunImg{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+/* ************* banner cards start ************* */
+.banner__cards {
+	width: 100%;
+	transform: translateY(-10%);
+}
+.banner__cardsMain{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+}
+.banner__cardsItem{
+    background: var(--pure);
+    padding: 40px 25px 40px 30px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.banner__cardsImg{
+    width: 80px;
+}
+.banner__cardsHeading{
+    color: var(--dark);
+    font-family: var(--ff__two);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 160%;
+    text-transform: capitalize;
+    padding: 34px 0 16px 0;
+}
+.banner__cardsParagraph{
+    color: var(--dark);
+    font-family: var(--ff__one);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 200%;
+    text-transform: capitalize;
+}
+/* ************* banner cards end ************* */
 /* ================================= banner ends ====================================== */
+
+/* ================================= cards start ====================================== */
+
+
+/* ================================= cards ends ====================================== */
