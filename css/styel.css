@@ -266,16 +266,16 @@ nav .navbar{
     }
 }
 .banner__electronTwo{
-    bottom: 250px;
+    bottom: 560px;
     left: 16%;
     animation: electron_jump_two 4s ease-in 0ms infinite alternate;
 }
 @keyframes electron_jump_two{
     from{
-        bottom: 80px;
-        filter: blur(7px);
+        bottom: 560px;
+        filter: blur(5px);
     }to{
-        bottom: 250px;
+        bottom: 362px;
         filter: blur(0px);
     }
 }
@@ -300,9 +300,9 @@ nav .navbar{
 }
 .banner__crossTwo {
 	color: var(--electron);
-	bottom: 205px;
-	right: 41%;
-    animation: cross__two 4.5s linear 0ms infinite reverse;
+	top: 545px;
+	right: 33%;
+	animation: cross__two 4.5s linear 0ms infinite reverse;
 }
 @keyframes cross__two{
     from{
@@ -326,8 +326,8 @@ nav .navbar{
 }
 .banner__crossFour {
 	color: var(--crossThree);
-	bottom: 376px;
-	right: 34%;
+	bottom: 500px;
+	right: 20%;
 }
 .banner__crossFive{
     color: var(--crossThree);
@@ -349,10 +349,41 @@ nav .navbar{
     bottom: 0;
     left: 0;
 }
+.banner__anotherAtom{
+	width: 238px;
+	height: 238px;
+	border: 2px solid var(--crossThree);
+	border-radius: 50%;
+	position: absolute;
+	top: 848px;
+	left: 22%;
+    z-index: 1;
+    animation: atom__two 6s linear 100ms infinite;
+}
+@keyframes atom__two {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.banner__anotherAtom::after {
+	background-image: radial-gradient(farthest-side at 56% 20%, #4c98c9, #74f1f3, #d4e0f3);
+	content: '';
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	position: absolute;
+	top: 37px;
+	left: -12px;
+}
 /* ************* banner cards start ************* */
 .banner__cards {
 	width: 100%;
 	transform: translateY(-10%);
+	z-index: 2;
+	position: relative;
 }
 .banner__cardsMain{
     width: 100%;
